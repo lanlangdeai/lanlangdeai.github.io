@@ -146,9 +146,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../php/functions.md">
+        <li class="chapter " data-level="1.2.1" data-path="../php/functions.html">
             
-                <span>
+                <a href="../php/functions.html">
             
                     
                         <b>1.2.1.</b>
@@ -158,6 +158,27 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../php/files.html">
+            
+                <a href="../php/files.html">
+            
+                    
+                        <b>1.2.1.1.</b>
+                    
+                    文件类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -169,6 +190,21 @@
                         <b>1.2.2.</b>
                     
                     常用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../php/composer.html">
+            
+                <a href="../php/composer.html">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    第三方包
             
                 </a>
             
@@ -235,6 +271,21 @@
                         <b>1.3.3.</b>
                     
                     示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    第三方包
             
                 </a>
             
@@ -607,9 +658,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.16" data-path="../project/project.md">
+        <li class="chapter " data-level="1.16" data-path="../project/project.html">
             
-                <span>
+                <a href="../project/project.html">
             
                     
                         <b>1.16.</b>
@@ -707,14 +758,49 @@
 <ul>
 <li>repr - &#x5C06;&#x5BF9;&#x8C61;&#x8F6C;&#x5316;&#x4E3A;&#x5171;&#x89E3;&#x91CA;&#x5668;&#x8BFB;&#x53D6;&#x7684;&#x5F62;&#x5F0F;</li>
 </ul>
-<pre class="language-"><code>&gt;&gt;&gt;s = &apos;RUNOOB&apos;
-&gt;&gt;&gt; repr(s)
-&quot;&apos;RUNOOB&apos;&quot;
-&gt;&gt;&gt; dict = {&apos;runoob&apos;: &apos;runoob.com&apos;, &apos;google&apos;: &apos;google.com&apos;};
-&gt;&gt;&gt; repr(dict)
-&quot;{&apos;google&apos;: &apos;google.com&apos;, &apos;runoob&apos;: &apos;runoob.com&apos;}&quot;
-&gt;&gt;&gt;
-</code></pre><footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <a href="https://github.com/lanlangdeai" target="_blank">lanlangdeai</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2021-05-26 11:27:31 </span> </footer>
+<pre class="language-"><code class="lang-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>s <span class="token operator">=</span> <span class="token string">&apos;RUNOOB&apos;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token builtin">repr</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span>
+<span class="token string">&quot;&apos;RUNOOB&apos;&quot;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token builtin">dict</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&apos;runoob&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;runoob.com&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;google&apos;</span><span class="token punctuation">:</span> <span class="token string">&apos;google.com&apos;</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token builtin">repr</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">)</span>
+<span class="token string">&quot;{&apos;google&apos;: &apos;google.com&apos;, &apos;runoob&apos;: &apos;runoob.com&apos;}&quot;</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>
+</code></pre>
+<ul>
+<li>translate - &#x6839;&#x636E;&#x53C2;&#x6570;table&#x7ED9;&#x51FA;&#x7684;&#x8868;&#xFF08;&#x5305;&#x542B;256&#x4E2A;&#x5B57;&#x7B26;&#xFF09;&#x8F6C;&#x6362;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x8981;&#x8FC7;&#x6EE4;&#x6389;&#x7684;&#x5B57;&#x7B26;&#x653E;&#x5230;deletechars&#x53C2;&#x6570;&#x4E2D;</li>
+</ul>
+<pre class="language-"><code class="lang-python"><span class="token number">1</span><span class="token punctuation">)</span>
+intab <span class="token operator">=</span> <span class="token string">&quot;aeiou&quot;</span>
+outtab <span class="token operator">=</span> <span class="token string">&quot;12345&quot;</span>
+trantab <span class="token operator">=</span> <span class="token builtin">str</span><span class="token punctuation">.</span>maketrans<span class="token punctuation">(</span>intab<span class="token punctuation">,</span> outtab<span class="token punctuation">)</span>   <span class="token comment"># &#x5236;&#x4F5C;&#x7FFB;&#x8BD1;&#x8868;</span>
+
+<span class="token builtin">str</span> <span class="token operator">=</span> <span class="token string">&quot;this is string example....wow!!!&quot;</span>
+<span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">.</span>translate<span class="token punctuation">(</span>trantab<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> th3s 3s str3ng 2x1mpl2<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>w4w!!!
+
+<span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token comment"># &#x5236;&#x4F5C;&#x7FFB;&#x8BD1;&#x8868;</span>
+bytes_tabtrans <span class="token operator">=</span> <span class="token builtin">bytes</span><span class="token punctuation">.</span>maketrans<span class="token punctuation">(</span><span class="token string">b&apos;abcdefghijklmnopqrstuvwxyz&apos;</span><span class="token punctuation">,</span> <span class="token string">b&apos;ABCDEFGHIJKLMNOPQRSTUVWXYZ&apos;</span><span class="token punctuation">)</span>
+
+<span class="token comment"># &#x8F6C;&#x6362;&#x4E3A;&#x5927;&#x5199;&#xFF0C;&#x5E76;&#x5220;&#x9664;&#x5B57;&#x6BCD;o</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">b&apos;runoob&apos;</span><span class="token punctuation">.</span>translate<span class="token punctuation">(</span>bytes_tabtrans<span class="token punctuation">,</span> <span class="token string">b&apos;o&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+<ul>
+<li>fromkeys - &#x7528;&#x4E8E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x5B57;&#x5178;&#xFF0C;&#x4EE5;&#x5E8F;&#x5217;seq&#x4E2D;&#x5143;&#x7D20;&#x505A;&#x5B57;&#x5178;&#x7684;&#x952E;&#xFF0C;value&#x4E3A;&#x5B57;&#x5178;&#x6240;&#x6709;&#x952E;&#x5BF9;&#x5E94;&#x7684;&#x521D;&#x59CB;&#x503C;</li>
+</ul>
+<pre class="language-"><code class="lang-python">seq <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token string">&apos;Google&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Runoob&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;Taobao&apos;</span><span class="token punctuation">)</span>
+
+<span class="token builtin">dict</span> <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">.</span>fromkeys<span class="token punctuation">(</span>seq<span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token string">&quot;&#x65B0;&#x5B57;&#x5178;&#x4E3A; : %s&quot;</span> <span class="token operator">%</span>  <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">)</span>
+
+<span class="token builtin">dict</span> <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">.</span>fromkeys<span class="token punctuation">(</span>seq<span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span> <span class="token string">&quot;&#x65B0;&#x5B57;&#x5178;&#x4E3A; : %s&quot;</span> <span class="token operator">%</span>  <span class="token builtin">str</span><span class="token punctuation">(</span><span class="token builtin">dict</span><span class="token punctuation">)</span>
+
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> &#x65B0;&#x5B57;&#x5178;&#x4E3A; <span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">&apos;Google&apos;</span><span class="token punctuation">:</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token string">&apos;Taobao&apos;</span><span class="token punctuation">:</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token string">&apos;Runoob&apos;</span><span class="token punctuation">:</span> <span class="token boolean">None</span><span class="token punctuation">}</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> &#x65B0;&#x5B57;&#x5178;&#x4E3A; <span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">&apos;Google&apos;</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token string">&apos;Taobao&apos;</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token string">&apos;Runoob&apos;</span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">}</span>
+</code></pre>
+<footer class="page-footer-ex"> <span class="page-footer-ex-copyright"> <a href="https://github.com/lanlangdeai" target="_blank">lanlangdeai</a> </span> &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; <span class="page-footer-ex-footer-update"> <i>updated</i> 2021-05-28 09:24:12 </span> </footer>
                                 
                                 </section>
                             
@@ -757,7 +843,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"函数/方法","level":"1.3.2","depth":2,"next":{"title":"示例","level":"1.3.3","depth":2,"path":"python/cases.md","ref":"python/cases.md","articles":[]},"previous":{"title":"基础语法","level":"1.3.1","depth":2,"path":"python/basics.md","ref":"python/basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","github","baidu-tongji-with-multiple-channel","copy-code-button","anchor-navigation-ex","prism","splitter","page-footer-ex","sharing","codeblock-filename","-mathjax","multipart","bootstrap-callout","theme-comscore","-rss","-lunr","-search","search-pro","-highlight","-github-buttons","-donate","-sharing-plus","-favicon","-ga","-editlink","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/lanlangdeai/Gitbook.git"},"livereload":{},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://hm.baidu.com/hm.js","token":"30a114d157d9edf0514ba584936c649d"},"page-footer-ex":{"copyright":"[lanlangdeai](https://github.com/lanlangdeai)","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"<i>updated</i>"},"splitter":{},"search-pro":{},"multipart":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-comscore":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"all":["weibo","google","twitter","weibo","instapaper"],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"X-Wolf","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LanLang's Gitbook","language":"zh-hans","gitbook":"3.2.3","description":"多种技术知识点汇总，方便后期查看"},"file":{"path":"python/functions.md","mtime":"2021-05-26T03:27:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-06-05T02:23:20.661Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"函数/方法","level":"1.3.2","depth":2,"next":{"title":"示例","level":"1.3.3","depth":2,"path":"python/cases.md","ref":"python/cases.md","articles":[]},"previous":{"title":"基础语法","level":"1.3.1","depth":2,"path":"python/basics.md","ref":"python/basics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","anchors","github","baidu-tongji-with-multiple-channel","copy-code-button","anchor-navigation-ex","prism","splitter","page-footer-ex","sharing","codeblock-filename","-mathjax","multipart","bootstrap-callout","theme-comscore","-rss","-lunr","-search","search-pro","-highlight","-github-buttons","-donate","-sharing-plus","-favicon","-ga","-editlink"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/lanlangdeai/Gitbook.git"},"baidu-tongji-with-multiple-channel":{"multipleChannelConfig":{},"url":"https://hm.baidu.com/hm.js","token":"30a114d157d9edf0514ba584936c649d"},"page-footer-ex":{"copyright":"[lanlangdeai](https://github.com/lanlangdeai)","markdown":true,"update_format":"YYYY-MM-DD HH:mm:ss","update_label":"<i>updated</i>"},"splitter":{},"search-pro":{},"multipart":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"codeblock-filename":{},"theme-comscore":{},"expandable-chapters-small":{},"copy-code-button":{},"sharing":{"all":["weibo","google","twitter","weibo","instapaper"],"facebook":false,"google":false,"instapaper":false,"twitter":false,"vk":false,"weibo":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{}},"theme":"default","author":"X-Wolf","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"LanLang's Gitbook","language":"zh-hans","gitbook":"3.2.3","description":"多种技术知识点汇总，方便后期查看"},"file":{"path":"python/functions.md","mtime":"2021-05-28T01:24:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-12-13T09:46:32.401Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -796,10 +882,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
